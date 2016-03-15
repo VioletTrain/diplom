@@ -22,7 +22,7 @@ if (! $db){
 mysql_set_charset('utf8');
 
 if(!mysql_select_db($dbname, $db) ){
-    echo "Ошибка доступа к базе данных: {$dbname}";
+    echo "Ошибка доступа к базе данных";
     exit();
     
 } 

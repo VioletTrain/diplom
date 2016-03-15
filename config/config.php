@@ -10,16 +10,9 @@
 define('PathPrefix', '../controllers/');
 define('PathPostfix', 'Controller.php');
 
-//>используемый шаблон
-$template = 'default';
-
 // пути к файлами шаблонов (*.tpl)
-define('TemplatePrefix', "../views/{$template}/");
+define('TemplatePrefix', "../views/");
 define('TemplatePostfix', '.tpl');
-
-// пути к файлам в вебпространстве
-define('TemplateWebPath', "/templates/{$template}/");
-//<
 
 // Инициализация шаблонизатора Smarty
 // put full path to Smarty.class.php
@@ -31,4 +24,4 @@ $smarty->setCompileDir('../tmp/smarty/templates_c');
 $smarty->setCacheDir('../tmp/samrty/cache');
 $smarty->setConfigDir('../library/smarty/configs');
 
-$smarty->assign('templateWebPath', TemplateWebPath);
+

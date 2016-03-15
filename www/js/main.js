@@ -3,7 +3,6 @@ function getData(obj_form){
     $('input, textarea, select', obj_form).each(function(){
         if(this.name && this.name!=''){
             hData[this.name] = this.value;
-            console.log('hData[' + this.value + '] = ' + hData[this.name]);
         }
     });
     return hData;

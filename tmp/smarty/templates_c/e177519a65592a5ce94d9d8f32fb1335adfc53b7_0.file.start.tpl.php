@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-03-15 17:12:46
-  from "D:\Stuff\Diplom\xampp1\htdocs\noteholder.local\views\default\start.tpl" */
+/* Smarty version 3.1.29, created on 2016-03-15 19:04:11
+  from "D:\Stuff\Collage\OpenServer\OpenServer\domains\noteholder.local\views\start.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_56e8266ead9e60_76928693',
+  'unifunc' => 'content_56e8327b6dc1a0_53847306',
   'file_dependency' => 
   array (
-    '528f8595f8953db79ba2c054f2215faf40b070bd' => 
+    'e177519a65592a5ce94d9d8f32fb1335adfc53b7' => 
     array (
-      0 => 'D:\\Stuff\\Diplom\\xampp1\\htdocs\\noteholder.local\\views\\default\\start.tpl',
-      1 => 1458054484,
+      0 => 'D:\\Stuff\\Collage\\OpenServer\\OpenServer\\domains\\noteholder.local\\views\\start.tpl',
+      1 => 1458057818,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_56e8266ead9e60_76928693 ($_smarty_tpl) {
+function content_56e8327b6dc1a0_53847306 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 
@@ -28,8 +28,7 @@ function content_56e8266ead9e60_76928693 ($_smarty_tpl) {
 <head>
 	<title><?php echo $_smarty_tpl->tpl_vars['pageTitle']->value;?>
 </title>
-	<link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['templateWebPath']->value;?>
-css/main.css">
+	<link rel="stylesheet" href="css/main.css">
         <?php echo '<script'; ?>
  type="text/javascript" src="js/jquery-1.12.1.min.js"><?php echo '</script'; ?>
 >
