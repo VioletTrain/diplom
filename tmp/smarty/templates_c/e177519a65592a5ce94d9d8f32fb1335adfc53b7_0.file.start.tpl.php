@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-03-15 19:04:11
+/* Smarty version 3.1.29, created on 2016-03-15 19:47:51
   from "D:\Stuff\Collage\OpenServer\OpenServer\domains\noteholder.local\views\start.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_56e8327b6dc1a0_53847306',
+  'unifunc' => 'content_56e83cb75ba756_38199361',
   'file_dependency' => 
   array (
     'e177519a65592a5ce94d9d8f32fb1335adfc53b7' => 
     array (
       0 => 'D:\\Stuff\\Collage\\OpenServer\\OpenServer\\domains\\noteholder.local\\views\\start.tpl',
-      1 => 1458057818,
+      1 => 1458060391,
       2 => 'file',
     ),
   ),
@@ -19,24 +19,23 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_56e8327b6dc1a0_53847306 ($_smarty_tpl) {
+function content_56e83cb75ba756_38199361 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 
 <html>
 
 <head>
-	<title><?php echo $_smarty_tpl->tpl_vars['pageTitle']->value;?>
-</title>
-	<link rel="stylesheet" href="css/main.css">
+	<title>Welcome to NoteHolder</title>
+	<link rel="stylesheet" href="scss/index.css">
         <?php echo '<script'; ?>
- type="text/javascript" src="js/jquery-1.12.1.min.js"><?php echo '</script'; ?>
+ src="js/jquery.js"><?php echo '</script'; ?>
 >
-        <?php echo '<script'; ?>
+	<?php echo '<script'; ?>
  src="js/index.js"><?php echo '</script'; ?>
 >
-        <?php echo '<script'; ?>
- type="text/javascript" src="js/main.js"><?php echo '</script'; ?>
+	<?php echo '<script'; ?>
+ src="js/main.js"><?php echo '</script'; ?>
 >
 </head>
 
@@ -45,41 +44,73 @@ function content_56e8327b6dc1a0_53847306 ($_smarty_tpl) {
 <!--	MENU-->
 	<div class="menu">
 		<div class="logo">
-			<img src="img/logo.png" height="60px">
+			<img src="img/logo.png">
 		</div>
-		<div class="name">Note Holder</div>
-		<div class="btn log_btn_menu">Login</div>
-		<div class="btn reg_btn_menu">Register</div>
+		<div class="name">NoteHolder</div>
+		<div class="btn log_menu_btn">Login</div>
+		<div class="btn reg_menu_btn">Register</div>
 	</div>
 	
 <!--	CONTENT-->
 	<div class="content">
-		<h1>Note Holder</h1>
+		<h1>Welcome to NoteHolder!</h1>
 		<p>
-			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+			We provide a brand new way for you to organize everithyng has sense - many kinds of information, which can be important for you!</br></br>Text, links, pictures, drawnings... any files.</br></br>Feel free to create, organize and share notes any way you like!</br></br>Add folders, mark notes, sort them by name, color, date, share in social networks...</br></br>Use lots of usefull functions we present to you!</br></br>Just spend few seconds to register or login by clicking buttons on the top menu and you can start working!</br></br>We hope you will enjoy your usage experience on any platform we support - let it be desktop or mobile device, we will make everything for you to feel comfortly using NoteHolder!</br></br>Organize you minds simply!
+			</br></br></br></br></br></br></br></br></br></br></br></br></br></br>To contact us  write to noteholder@gmail.com
+			
 		</p>
 	</div>
 	
-	<div class="screen1">
+	<div class="icons">
+		<div class="icon icon1">
+		<img src="img/icons/note.png">
+		</div>
 	
+		<div class="icon icon2">
+		<img src="img/icons/image.png">
+		</div>
+
+		<div class="icon icon3">
+		<img src="img/icons/pen.png">
+		</div>
+		
+		<div class="icon icon4">
+		<img src="img/icons/file.png">
+		</div>
+		
+		<div class="icon icon5">
+		<img src="img/icons/folder.png">
+		</div>
+		
+		<div class="icon icon6">
+		<img src="img/icons/mark.png">
+		</div>
+		
+		<div class="icon icon7">
+		<img src="img/icons/cloud.png">
+		</div>
 	</div>
-	
+		
 <!--	FORMS-->
 	<div class="form reg_form">
-		<input class="field email" type="text" placeholder="email"  name="email">
-		<input class="field pass" type="password" placeholder="password" name="pwd1">
-		<input class="field pass2" type="password" placeholder="retype password" name="pwd2">
+		<input class="field reg_email" type="text" placeholder="email" name="email">
+		<input class="field reg_pass" type="password" placeholder="password" name="pwd1">
+		<input class="field reg_pass2" type="password" placeholder="retype password" name="pwd2">
 		<div class="btn reg_btn" onclick="registerNewUser();">Register</div>
 		<div class="btn reg_cancel_btn">Cancel</div>
 	</div>
 	
 	<div class="form log_form">
-		<input class="field email" type="text" placeholder="email" name="email">
-		<input class="field pass" type="password" placeholder="password" name="pwd1">
+		<input class="field log_email" type="text" placeholder="email" name="email">
+		<input class="field log_pass" type="password" placeholder="password" name="pwd1">
 		<div class="btn log_btn" onclick="authoriseUser();">Login</div>
 		<div class="btn log_cancel_btn">Cancel</div>
-		
 	</div>
+	
+<!--	ALERTS-->
+	<div class="alert">Invalid email\password!</div>
+	
+	<div class="back"></div>
 </body>
 	
 </html>

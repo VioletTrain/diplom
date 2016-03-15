@@ -42,6 +42,47 @@ function registerNewUser($email, $pwdMD5, $name){
     return $rs;
 }
 
+function checkEmail($email, $res){
+    if(! $email){
+        $res['success'] = false;
+        $res['message'] = 'Enter email';
+    } 
+    return $res;
+}
+
+function checkPwd($pwd, $res){
+    if(! $pwd){
+        $res['success'] = false;
+        $res['message'] = 'Enter password';
+    }
+    return $res;
+}
+
+function checkPwd1($pwd1, $res){
+    if(! $pwd1){
+        $res['success'] = false;
+        $res['message'] = 'Enter password';
+    }
+    return $res;
+}
+
+function checkPwd2($pwd2, $res){
+    if(! $pwd2){
+        $res['success'] = false;
+        $res['message'] = 'Retype password';
+    }
+    return $res;
+}
+
+function checkPwd_1_2($pwd1, $pwd2, $res){
+    if($pwd1 != $pwd2){
+        $res['success'] = false;
+        $res['message'] = 'Passwords don`t match';
+    }
+    return $res;
+}
+
+
 /**
  * Проверка параметров регистрации пользователя
  * 
@@ -52,30 +93,10 @@ function registerNewUser($email, $pwdMD5, $name){
  */
 function checkRegisterParams($email, $pwd1, $pwd2){
     $res = null;
-    
-    if(! $email){
-        $res['success'] = false;
-        $res['message'] = 'Enter email';
-        return $res;
-    }
-    
-    if(! $pwd1){
-        $res['success'] = false;
-        $res['message'] = 'Enter password';
-        return $res;
-    }
-    
-    if(! $pwd2){
-        $res['success'] = false;
-        $res['message'] = 'Retype password';
-        return $res;
-    }
-    
-    if($pwd1 != $pwd2){
-        $res['success'] = false;
-        $res['message'] = 'Passwords don`t match';
-        return $res;
-    }
+    $res = checkPwd_1_2($pwd1, $pwd2, $res);
+    $res = checkPwd2($pwd2, $res);
+    $res = checkPwd1($pwd1, $res);
+    $res = checkEmail($email, $res);
     
     return $res;
 }
