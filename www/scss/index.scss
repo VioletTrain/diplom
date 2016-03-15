@@ -1,0 +1,187 @@
+//COLORS
+$dark_indigo:   #303F9F;
+$indigo: 	 	#3F51B5;
+$light_indigo:  #C5CAE9;
+$white:    	 	#FFFFFF;
+$orange:     	#FF5722;
+$dark:    		#212121;
+$gray:  		#727272;
+$light:     	#B6B6B6;
+
+//
+$anim: all 0.5s;
+
+body{
+	font-family: roboto, sans-serif;
+	opacity: 1;
+	transition: $anim;
+}
+
+.menu{
+	position: fixed;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	background: $white;
+	width: 100%;
+	height: 80px;
+	transition: $anim;
+	
+	.btn{
+		position: absolute;
+		width: 100px;
+		height: 20px;
+		top: 20px;
+		padding: 10px;
+	}
+}
+
+.logo{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	opacity: 0;
+	transition: $anim;
+	img{
+		height: 60px;
+	}
+}
+
+.name{
+	position: absolute;
+	top: 10px;
+	left: 120px;
+	font-size: 3em;
+	font-weight: bolder;
+	color: black;
+	opacity: 0;
+	cursor: default;
+	transition: $anim;
+}
+
+.btn{
+	background: $white;
+	font-weight: bold;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 5px;
+	transition: $anim;
+	color: $orange;
+	&:hover{background: $light_indigo;}
+
+}
+
+.back{
+	z-index: -1; 
+	position:fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: rgba(0,0,0,0.5);
+	transition: opacity 1s;
+	opacity:0;
+}
+
+/*MENU BUTTONS*/
+
+.log_menu_btn{
+	right: 60px;
+	opacity: 0;
+}
+
+.reg_menu_btn{
+	right: 220px;
+	opacity: 0;
+}
+
+/*FORMS*/
+
+.form{
+	z-index: 5;
+	position: fixed;
+	top: -500px;
+	left: 35%;
+	width: 20%;
+	height: 180px;
+	padding: 60px;
+	background: $white;
+	box-shadow: 0 15px 30px $dark;
+	transition: $anim;
+	
+	.btn{
+		padding: 10px 0 10px 0;
+		margin-bottom: 10px;
+		width: 100%;
+	}
+}
+
+.reg_form{
+	height: 220px;
+	
+}
+
+.field{
+	border: none;
+	width: 100%;
+	height: 30px;
+	margin-bottom: 20px;
+	border-bottom: 2px solid $light_indigo;
+	transition: $anim;
+	&:focus{border-bottom: 2px solid $indigo;}
+}
+
+
+/*ALERTS*/
+
+.alert{
+	z-index: 5;
+	position: fixed;
+	bottom: -80px;
+	left: 40%;
+	background: $orange;
+	width:15%;
+	height: 20px;
+	padding: 20px;
+	font-weight: bold;
+	text-align: center;
+	box-shadow: 0 15px 30px $dark;
+	transition: $anim;
+}
+
+/*CONTENT*/
+
+.content{
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	width: 40%;
+	height: 100%;
+	opacity: 0;
+	transition: $anim;
+	h1{
+		margin: 0;
+		font-size: 2.5em;
+	}
+	
+	p{
+		font-size: 1.5em;
+	}
+}
+
+.icons{
+	position: absolute;
+	top: 100px;
+	right: 60px;
+	width: 15%;
+}
+
+.icon{
+	opacity: 0;
+	padding: 10px;
+	transition: $anim;
+	img{
+		width: 100%;
+	}
+}

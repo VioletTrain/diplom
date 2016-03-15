@@ -19,17 +19,20 @@ function registerNewUser(){
     $.ajax({
         type:'POST',
         async: true,
-        url:"/user/register/",
+        url:"?controller=user&action=register",
         data: postData,
         dataType: 'json',
         success: function(data){ 
             
         if(data['success']){ 
                 formHide(".reg_form");
+                document.querySelector(".back").style.opacity="0"; setTimeout('document.querySelector(".back").style.zIndex="-1"', 800);
                 console.log(data['message']);
                
             } else {
                 console.log(data['message']);
+                document.querySelector(".alert").innerHTML=data['message'];
+                ShowAlert();
             }
         }
     });
@@ -41,17 +44,20 @@ function authoriseUser(){
     $.ajax({
         type:'POST',
         async: true,
-        url:"/user/authorise/",
+        url:"?controller=user&action=authorise",
         data: postData,
         dataType: 'json',
         success: function(data){ 
             
         if(data['success']){ 
                 formHide(".log_form");
+                document.body.style.opacity=0;
                 console.log(data['message']);
                
             } else {
                 console.log(data['message']);
+				document.querySelector(".alert").innerHTML=data['message'];
+                ShowAlert();
             }
         }
     });
