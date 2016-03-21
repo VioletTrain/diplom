@@ -44,7 +44,7 @@ function AuthoriseUser(){
             
         if(data['success']){ 
                 LoginSuccess();
-                window.location.href = "?controller=main&action=index";
+                window.location.href = "/main/";
             } else {
                 ShowAlert(data['message']);
             }
