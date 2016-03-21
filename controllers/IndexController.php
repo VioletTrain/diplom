@@ -4,6 +4,6 @@ function indexAction($smarty) {
     
    $smarty->assign('pageTitle', 'Welcome to NoteHolder');
   
-   loadTemplate($smarty, 'start');
+   loadTemplate($smarty, 'index');
 
 }
